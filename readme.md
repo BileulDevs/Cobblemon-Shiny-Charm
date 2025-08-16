@@ -105,7 +105,6 @@ dependencies {
 - Configurable shiny rates
 - Real-time config reloading
 - English and French localization
-- Admin commands for rate management
 
 
 ## 🙏 Credits
