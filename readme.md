@@ -50,19 +50,8 @@ The mod creates a configuration file at `.minecraft/config/shiny_config.json`:
 ### Example Configurations
 
 ```json
-// Very rare (0.1% chance)
 {
   "shinyCharmChance": 1000
-}
-
-// Rare (1% chance) 
-{
-  "shinyCharmChance": 100
-}
-
-// Common (10% chance)
-{
-  "shinyCharmChance": 10
 }
 ```
 
