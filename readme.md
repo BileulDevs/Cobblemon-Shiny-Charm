@@ -63,16 +63,6 @@ All commands require OP level 2 (operator permissions):
 - `/shinycharm reload` - Reload the configuration from file
 - `/shinycharm info` - Display current shiny rate information
 
-### Advanced Commands
-- `/shinycharm reload` - Reload configuration
-- `/shinycharm info` - Show current settings
-
-### Command Examples
-```
-/shinycharm reload
-/shinycharm info
-```
-
 ## 🌍 Localization
 
 The mod supports multiple languages:
