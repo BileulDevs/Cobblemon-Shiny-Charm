@@ -60,17 +60,17 @@ The mod creates a configuration file at `.minecraft/config/shiny_config.json`:
 All commands require OP level 2 (operator permissions):
 
 ### Basic Commands
-- `/shiny reload` - Reload the configuration from file
-- `/shiny info` - Display current shiny rate information
+- `/shinycharm reload` - Reload the configuration from file
+- `/shinycharm info` - Display current shiny rate information
 
 ### Advanced Commands
-- `/shinyconfig reload` - Reload configuration
-- `/shinyconfig info` - Show current settings
+- `/shinycharm reload` - Reload configuration
+- `/shinycharm info` - Show current settings
 
 ### Command Examples
 ```
-/shiny reload
-/shiny info
+/shinycharm reload
+/shinycharm info
 ```
 
 ## 🌍 Localization
