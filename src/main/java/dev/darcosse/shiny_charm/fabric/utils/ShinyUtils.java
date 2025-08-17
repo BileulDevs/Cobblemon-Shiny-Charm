@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ShinyUtils {
     public static boolean getIsShiny() {
         int odds = ConfigManager.getShinyChance();
-        int random = ThreadLocalRandom.current().nextInt(1, (odds + 1));
+        int random = ThreadLocalRandom.current().nextInt(1, odds);
         return random == 1;
     }
 }

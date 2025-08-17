@@ -38,7 +38,7 @@ public class ConfigManager {
 
     public static int getShinyChance() {
         if (config == null) loadConfig();
-        return config.shinyCharmChance;
+        return config.shinyCharmChance + 1;
     }
 
     public static void reloadConfig() {
