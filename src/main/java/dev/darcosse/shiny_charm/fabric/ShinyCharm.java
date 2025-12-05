@@ -7,6 +7,7 @@ import dev.darcosse.shiny_charm.fabric.item.ShinyCharmItem;
 import com.cobblemon.mod.common.api.Priority;
 import com.cobblemon.mod.common.api.events.CobblemonEvents;
 import dev.darcosse.shiny_charm.fabric.item.ShinyCharmItemGroup;
+import dev.darcosse.shiny_charm.fabric.tick.TickManager;
 import kotlin.Unit;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
@@ -22,6 +23,7 @@ public class ShinyCharm implements ModInitializer {
     @Override
     public void onInitialize() {
         ConfigManager.loadConfig();
+        TickManager.register();
 
         Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "shiny_charm"), SHINY_CHARM);
         ShinyCharmItemGroup.registerItemGroup();

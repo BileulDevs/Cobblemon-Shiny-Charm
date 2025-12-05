@@ -28,14 +28,12 @@ public class SpawnHandler {
         PokemonEntity pokemonEntity = (PokemonEntity) event.getEntity();
         Pokemon pokemon = pokemonEntity.getPokemon();
 
-        if (event.getCtx() != null) {
-            ServerPlayerEntity player = (ServerPlayerEntity) event.getCtx().getCause().getEntity();
-            if (player != null) {
-                boolean isWearing = ShinyCharmItem.isWearingShinyCharm(player);
-                if (isWearing && getIsShiny()) {
-                    pokemon.setShiny(true);
-                    player.sendMessage(Text.translatable("message.shiny_charm.success").styled(style -> style.withColor(Formatting.LIGHT_PURPLE)), false);
-                }
+        ServerPlayerEntity player = (ServerPlayerEntity) event.getSpawnablePosition().getCause().getEntity();
+        if (player != null) {
+            boolean isWearing = ShinyCharmItem.isWearingShinyCharm(player);
+            if (isWearing && getIsShiny()) {
+                pokemon.setShiny(true);
+                player.sendMessage(Text.translatable("message.shiny_charm.success").styled(style -> style.withColor(Formatting.LIGHT_PURPLE)), false);
             }
         }
 

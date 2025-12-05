@@ -1,6 +1,7 @@
 package dev.darcosse.shiny_charm.fabric.config;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 import java.io.File;
 import java.io.FileReader;
@@ -8,9 +9,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ConfigManager {
-    private static final String CONFIG_FILE = "shiny_charm_config.json";
+    private static final String CONFIG_FILE = "shinycharm_config.json";
     private static ShinyCharmConfig config;
-    private static final Gson GSON = new Gson();
+    private static final Gson GSON = new GsonBuilder()
+            .setPrettyPrinting()
+            .create();
 
     public static void loadConfig() {
         File configFile = new File(FabricLoader.getInstance().getConfigDir().toFile(), CONFIG_FILE);

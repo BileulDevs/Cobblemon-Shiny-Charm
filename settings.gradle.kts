@@ -1,4 +1,4 @@
-rootProject.name = "Shiny-Charm"
+rootProject.name = "ShinyDex"
 
 pluginManagement {
     repositories {
