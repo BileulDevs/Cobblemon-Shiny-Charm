@@ -206,10 +206,10 @@ public class PokedexRegionUtils {
     }
 
     private static boolean hasCaughtSpecies(PokedexManager pokedexData, Species species) {
-        return pokedexData.getKnowledgeForSpecies(species.resourceIdentifier) == PokedexEntryProgress.CAUGHT;
+        return pokedexData.getKnowledgeForSpecies(species.resourceIdentifier) == PokedexEntryProgress.OWNED;
     }
 
     private static boolean hasSeenSpecies(PokedexManager pokedexData, Species species) {
-        return pokedexData.getKnowledgeForSpecies(species.resourceIdentifier) == PokedexEntryProgress.ENCOUNTERED;
+        return pokedexData.getKnowledgeForSpecies(species.resourceIdentifier) == PokedexEntryProgress.SEEN;
     }
 }
